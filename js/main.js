@@ -177,36 +177,3 @@ function addBlurToBg() {
   });
 }
 addBlurToBg();
-
-// function addDescBox(desc) {
-//   document
-//     .querySelectorAll("#zuck-modal-content .story-viewer .slides .item")
-//     .forEach((img) => {
-//       img.insertAdjacentHTML(
-//         "beforeend",
-//         `<center><div class="desc" id="desc"><p>${desc}</p></div></center>`
-//       );
-//     });
-// }
-
-// function changelinkTextToShop(type) {
-//   var itemsLink = document.querySelectorAll(`.item-link`);
-//   itemsLink.forEach((itemLink) => {
-//     itemLink.ownerDocument.onclick = (e) => {
-//       var linkHtmls = document.querySelectorAll(".tip");
-//       linkHtmls.forEach((linkHtml) => {
-//         var icon = document.createElement("i");
-//         type != "shop"
-//           ? icon.setAttribute("class", "fa fa-user")
-//           : icon.setAttribute("class", "fa fa-shop");
-//         linkHtml.innerText = `See my ${type}`;
-//         linkHtml.prepend(icon);
-//       });
-//       // addDescBox(
-//       //   "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet qui vel alias aliquam molestias ullam, iste minima. Debitis quia iste possimus odio ducimus? Voluptas facilis maiores harum? Illum, tempora nesciunt."
-//       // );
-//     };
-//   });
-// }
-
-// changelinkTextToShop("item");
