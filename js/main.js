@@ -47,7 +47,7 @@ const stories = new Zuck("stories", {
         buildItem(
           "1",
           "photo",
-          500,
+          5,
           "testImages/me_stand.jpg",
           "",
           "https://successchukwu.com",
@@ -58,7 +58,7 @@ const stories = new Zuck("stories", {
         buildItem(
           "2",
           "photo",
-          500,
+          5,
           "testImages/me_stand2.jpg",
           "",
           "https://successchukwu.com",
@@ -69,7 +69,7 @@ const stories = new Zuck("stories", {
         buildItem(
           "3",
           "photo",
-          500,
+          5,
           "testImages/me_stand3.jpg",
           "",
           "https://successchukwu.com",
@@ -89,7 +89,7 @@ const stories = new Zuck("stories", {
         buildItem(
           "1",
           "photo",
-          500,
+          5,
           "testImages/cheaplead-icon.png",
           "",
           "https://cheaplead.net",
@@ -100,7 +100,7 @@ const stories = new Zuck("stories", {
         buildItem(
           "2",
           "photo",
-          500,
+          5,
           "testImages/cheaplead_white.png",
           "",
           "https://cheaplead.net",
@@ -111,7 +111,7 @@ const stories = new Zuck("stories", {
         buildItem(
           "3",
           "photo",
-          500,
+          5,
           "testImages/cheaplead_by.png",
           "",
           "https://cheaplead.net",
@@ -131,7 +131,7 @@ const stories = new Zuck("stories", {
         buildItem(
           "1",
           "photo",
-          500,
+          5,
           "testImages/wallpaper.png",
           "",
           "https://tsdates.com",
@@ -142,7 +142,7 @@ const stories = new Zuck("stories", {
         buildItem(
           "2",
           "photo",
-          500,
+          5,
           "testImages/WAD-ad2.jpg",
           "",
           "https://tsdates.com",
