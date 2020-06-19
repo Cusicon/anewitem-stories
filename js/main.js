@@ -1,14 +1,4 @@
-function buildItem(
-  id,
-  type,
-  length,
-  src,
-  preview,
-  link,
-  linkText,
-  seen,
-  time,
-) {
+function buildItem(id, type, length, src, preview, link, linkText, seen, time) {
   linkText = `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
     Amet qui vel alias aliquam molestias ullam, iste minima.
     Debitis quia iste possimus odio ducimus? Voluptas facilis
