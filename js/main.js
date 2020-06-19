@@ -157,23 +157,30 @@ const stories = new Zuck("stories", {
 
 function addBlurToBg() {
   // Created the "story Blured Background"
-  document
-    .querySelectorAll("#zuck-modal")[0]
-    .insertAdjacentHTML(
-      "beforeend",
-      `<div id="storyBluredBg" style="background-image: url('');"></div>`
+  var zuckModal = document.querySelector("#zuck-modal");
+  zuckModal.insertAdjacentHTML(
+    "beforeend",
+    `<div id="storyBluredBg" style="background-image: url('');"></div>`
+  );
+
+  // Every 10 miliseconds check if bg-image is same as curent active image, else change it to that.
+  setInterval(() => {
+    var storyBluredBg = document.getElementById("storyBluredBg");
+    var currentStoryImgElem = document.querySelector(
+      " div.story-viewer.viewing > .slides > .item.active > img.media"
     );
 
-  var itemsLink = document.querySelectorAll(`.item-link`);
-  itemsLink.forEach((itemLink) => {
-    itemLink.ownerDocument.onclick = (e) => {
-      var storyBluredBg = document.getElementById("storyBluredBg");
-      var currentStoryImg = document
-        .querySelector(".slides > .item.active img.media")
-        .getAttribute("src");
+    if (currentStoryImgElem != null) {
+      var currentStoryImg = currentStoryImgElem.getAttribute("src");
+      var storyBluredBgImg = storyBluredBg.style.backgroundImage
+        .split('url("')[1]
+        .split('")')[0];
 
-      storyBluredBg.style.backgroundImage = `url('${currentStoryImg}')`;
-    };
-  });
+      // If storyBluredBgImg not equal to currentStoryImg, if true change bg-image to currentStoryImg
+      storyBluredBgImg != currentStoryImg
+        ? (storyBluredBg.style.backgroundImage = `url('${currentStoryImg}')`)
+        : (storyBluredBg.style.backgroundImage = `url('${currentStoryImg}')`);
+    }
+  }, 10);
 }
 addBlurToBg();
