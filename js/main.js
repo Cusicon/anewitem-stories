@@ -8,7 +8,6 @@ function buildItem(
   linkText,
   seen,
   time,
-  sellsAs
 ) {
   linkText = `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
     Amet qui vel alias aliquam molestias ullam, iste minima.
